@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #5788e3, #feb47b);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    color: #555;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills .skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills .skill {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills .skill:hover {
+    transform: scale(1.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    header .logo {
+        font-size: 1.5em;
+    }
+
+    header .tagline {
+        font-size: 1em;
+    }
+    
+    #skills .skill {
+        padding: 8px 16px;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    header .logo {
+        font-size: 1.2em;
+    }
+
+    header .tagline {
+        font-size: 0.9em;
+    }
+    
+    #skills .skill {
+        padding: 6px 12px;
+        margin: 6px;
+    }
+}
